@@ -109,7 +109,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--azul-destaque);
+    color: #0d68e7;
     /* Destaque ao passar o mouse */
 }
 
