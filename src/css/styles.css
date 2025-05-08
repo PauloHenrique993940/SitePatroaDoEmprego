@@ -68,7 +68,7 @@ body {
 }
 
 header {
-    background-color: var(--branco-total);
+    background-color: #041f3d;
     /* Header com fundo preto suave */
     color: var(--preto-suave);
     padding: 15px 0;
@@ -101,7 +101,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--preto-suave);
+    color: var(--branco-total);
     /* Links brancos para contraste */
     text-decoration: none;
     transition: color 0.3s ease;
@@ -440,7 +440,7 @@ h3 {
 }
 
 footer {
-    background-color: var(--preto-suave);
+    background-color: #041f3d;
     color: var(--branco-total);
     text-align: center;
     padding: 15px 0;
