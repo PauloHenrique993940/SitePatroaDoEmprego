@@ -1,0 +1,449 @@
+:root {
+    --colorAzulEscuro: #1c355e;
+    --colorVerdeMilitar: #5B6726;
+    --colorLaranjaQueimado: #C86D04;
+    --ColorCinzaMedio: #68707A;
+    --colorOff-white: #F6F6F0;
+}
+*{
+    list-style-type: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorOff-white);
+    color: var(--colorVerdeMilitar);
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--colorAzulEscuro);
+    background: linear-gradient(135deg, var(--colorAzulEscuro), #6dd5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 10px;
+    border: 2px solid var(--colorAzulEscuro);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--colorAzulEscuro);
+    color: #FFFFFF;
+    padding: 20px 0;
+    border-bottom: 1px solid #E9ECEF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--colorOff-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--colorVerdeMilitar);
+}
+
+.cta-header .button {
+    margin-left: 20px;
+}
+
+main .section {
+    padding: 60px 0;
+}
+
+main .section.bg-light {
+    background-color: var(--colorOff-white);
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--colorVerdeMilitar);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--colorVerdeMilitar);
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.button.primary {
+    background-color: var(--colorVerdeMilitar);
+    color: #FFFFFF;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button.primary:hover {
+    background-color: #3c4b19;
+}
+
+.button.secondary {
+    background-color: var(--colorLaranjaQueimado);
+    color: #FFFFFF;
+    
+}
+/* Animação pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button.secondary:hover {
+    background-color: #9f5302;
+}
+
+#titulo-animado {
+    position: relative;
+    display: inline-block;
+    animation: moverTexto 2s ease-in-out infinite alternate,  
+    corAnimada 3s linear infinite alternate;
+}
+
+@keyframes moverTexto {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(30px);
+    }
+}
+@keyframes corAnimada {
+    0% {
+        color: var(--colorAzulEscuro); /* Azul */
+    }
+    100% {
+        color: var(--colorLaranjaQueimado); /* Rosa */
+    }
+}
+
+
+.hero {
+    background-color: #E9ECEF;
+    padding: 80px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--colorVerdeMilitar);
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-buttons a {
+    margin-right: 15px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    box-shadow: 0 8px 20px rgba(1, 8, 41, 0.25);
+}
+
+.hero-image img,
+.hero-image video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.sobre-empresa ul,
+.empresas-beneficios ul,
+.candidatos-dicas ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.equipe-membros {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.membro {
+    text-align: center;
+}
+
+.membro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#servicos {
+    background-color: #1c355e;
+    width: 100%;
+    height: 100%;
+}
+
+#title,
+#describre {
+    color: #FFFFFF;
+}
+
+
+.servicos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.servico {
+    background-color: var(--colorOff-white);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: var(--colorVerdeMilitar);
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Transição para a escala e sombra */
+}
+
+.servico:hover {
+    transform: scale(1.05);
+    /* Aumenta o tamanho em 5% */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Aumenta a sombra para dar profundidade */
+    background-color: #f0f0f0;
+    /* Mantive a mudança de cor de fundo */
+}
+
+
+
+
+.servico img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.form-curriculo,
+.contato-form form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-curriculo input[type="text"],
+.form-curriculo input[type="email"],
+.form-curriculo input[type="file"],
+.form-curriculo textarea,
+.contato-form form input[type="text"],
+.contato-form form input[type="email"],
+.contato-form form textarea {
+    padding: 10px;
+    border: 1px solid #E9ECEF;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #FFFFFF;
+    color: var(--colorVerdeMilitar);
+}
+
+.form-curriculo textarea,
+.contato-form form textarea {
+    min-height: 100px;
+}
+
+.contato-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contato-details h3 {
+    margin-top: 0;
+}
+
+.contato-details p {
+    margin-bottom: 10px;
+}
+
+.contato-details i {
+    margin-right: 5px;
+    color: var(--colorVerdeMilitar);
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: var(--colorVerdeMilitar);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--colorLaranjaQueimado);
+}
+
+footer {
+    background-color: var(--colorAzulEscuro);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    border-top: 1px solid #555;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+    .container {
+        padding: 15px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .cta-header .button {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .equipe-membros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .servicos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-buttons a {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+        text-align: center;
+    }
+}
