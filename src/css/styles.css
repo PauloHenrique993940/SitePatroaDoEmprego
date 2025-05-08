@@ -296,7 +296,46 @@ h3 {
 }
 
 
+/*Depoimentos seção */
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas responsivas */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin-top: 30px;
+    
+}
 
+.depoimento-card {
+    background-size: cover; /* Garante que a imagem cubra todo o card */
+    background-position: center; /* Centraliza a imagem de fundo */
+    border-radius: 8px; /* Bordas arredondadas para os cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar os cards */
+    color: white; /* Cor do texto sobre a imagem */
+    padding: 20px;
+    display: flex;
+    align-items: flex-end; /* Alinha o conteúdo na parte inferior */
+    min-height: 200px; /* Altura mínima para os cards */
+}
+
+.depoimento-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para o texto */
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%; /* Garante que o fundo do texto ocupe toda a largura */
+    background-color: var(--colorAzulEscuro);
+}
+
+.depoimento-content .citacao {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.depoimento-content .autor {
+    font-weight: bold;
+    text-align: right;
+    font-size: 0.9em;
+}
 
 .servico img {
     width: 200px;
