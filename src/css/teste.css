@@ -1,0 +1,175 @@
+/* Cores */
+:root {
+    --branco: #FFFFFF;
+    --azul-medio: #00171F;
+    --azul-escuro: #003459;
+    --azul-claro: #ADEBFF;
+}
+
+/* Estilos Globais */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--branco);
+    color: var(--azul-medio);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--azul-escuro);
+}
+
+.bg-azul-medio {
+    background-color: var(--azul-medio);
+    color: var(--branco);
+}
+
+.bg-azul-medio h2 {
+    color: var(--branco);
+}
+
+.bg-azul-claro {
+    background-color: var(--azul-claro);
+    color: var(--azul-escuro);
+}
+
+/* Header */
+header {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--azul-claro);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--azul-claro);
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    color: var(--azul-escuro);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: var(--azul-medio);
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--azul-medio);
+}
+
+/* Seção Sobre Nós */
+/* Os estilos da seção "Sobre Nós" já estavam definidos anteriormente */
+
+/* Seção de Serviços */
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.servico {
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.servico h3 {
+    color: var(--azul-escuro);
+    margin-top: 0;
+}
+
+/* Seção de Feedback */
+.grid-feedback {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.opiniao {
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.opiniao p {
+    color: var(--azul-medio);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.opiniao .cliente {
+    font-weight: bold;
+    color: var(--azul-escuro);
+    font-style: normal;
+}
