@@ -6,7 +6,7 @@
     --branco-marfim: #F8F8DC;
     --cinza-claro: #D3D3D3;
     /* Um cinza mais claro para texto principal */
-    --branco-total: #FFFFFF;
+    --branco-total: #F4f8ff;
     --azul-destaque: #1F3B73;
     /* Um azul para destaque */
 
@@ -294,6 +294,7 @@ h3 {
 }
 .servico {
     /* Um tom mais claro que o fundo para os cards */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -362,7 +363,7 @@ h3 {
 }
 
 #sub-title{
-    color: var(--preto-suave);
+    color: var(--azul-destaque);
     font-weight: bold;
 }
 .servico img {
