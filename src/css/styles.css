@@ -25,8 +25,10 @@
 
 * {
     list-style-type: none;
-    
+
 }
+
+
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -218,7 +220,7 @@ h3 {
     font-weight: normal;
 }
 
-.hero-content span{
+.hero-content span {
     color: var(--pr);
 }
 
@@ -295,6 +297,26 @@ h3 {
 #servicos {
     background-color: var(--branco-total);
 }
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #263172;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe5b;
+    transform: scale(1.05);
+}
+
 .servico {
     /* Um tom mais claro que o fundo para os cards */
     background-color: #ffffff;
@@ -306,9 +328,10 @@ h3 {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.servico p{
+.servico p {
     color: var(--preto-suave);
 }
+
 .servico:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(2, 31, 124, 0.4);
@@ -316,7 +339,7 @@ h3 {
     /* Tom mais claro no hover */
 }
 
-#candidatos{
+#candidatos {
     background-color: var(--branco-total);
 }
 
@@ -365,10 +388,11 @@ h3 {
     color: var(--branco-total);
 }
 
-#sub-title{
+#sub-title {
     color: var(--azul-destaque);
     font-weight: bold;
 }
+
 .servico img {
     width: 180px;
     height: 180px;
