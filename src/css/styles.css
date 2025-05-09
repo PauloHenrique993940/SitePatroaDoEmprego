@@ -19,6 +19,8 @@
     --corBotaoDestaque: var(--azul-destaque);
     --corFundoSecoes: var(--preto-suave);
     /* Seções também com fundo preto suave */
+    --backgroundColorFedeback: #7d0a11;
+    --backgroudFundAzul: #00267b;
 }
 
 * {
