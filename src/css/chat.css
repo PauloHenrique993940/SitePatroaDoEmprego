@@ -1,0 +1,100 @@
+.chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: #e0f0ff;
+    /* Azul claro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+.chat-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2e86de;
+    font-size: 16px;
+}
+
+.chat-body {
+    height: 200px;
+    overflow-y: auto;
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 5px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.chat-input button {
+    background-color: #2e86de;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.open-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2e86de;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.chat-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.chat-buttons button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chat-buttons .whatsapp {
+    background-color: #25D366;
+}
+
+.chat-buttons .email {
+    background-color: #0072c6;
+}
+
+.chat-buttons button:hover {
+    opacity: 0.9;
+}

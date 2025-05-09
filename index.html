@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/src/css/chat.css">
 </head>
 
 <body>
@@ -35,7 +36,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <section id="home" class="hero">
             <div class="container">
@@ -134,23 +134,23 @@
                     </div>
                     <div class="servico animate__animated animate__fadeInUp delay-1s">
                         <h3><i class="fas fa-file-alt"></i> Reformulação de Currículos</h3>
-                            <img src="/src/images/curriculo.gif" alt="">
-                            <p style="font-size: 16px;">
-                                eu currículo pode estar te sabotando sem você nem perceber. Aqui, eu faço uma
-                                reformulação completa, compatível com os famosos robôs dos processos seletivos os
-                                sistemas de rastreamento de candidatos (ATS).
-                            </p>
-                            <p style="font-size: 16px;">
-                                Estruturo o documento com palavras-chave da sua área, foco em resultados, verbos de ação
-                                e
-                                clareza de leitura.
-                            </p>
-                            <p style="font-size: 16px;">
-                                O currículo final é direto, estratégico e pensado pra destacar o que realmente importa:
-                                seu
-                                valor profissional.
-                            </p>
-                           
+                        <img src="/src/images/curriculo.gif" alt="">
+                        <p style="font-size: 16px;">
+                            eu currículo pode estar te sabotando sem você nem perceber. Aqui, eu faço uma
+                            reformulação completa, compatível com os famosos robôs dos processos seletivos os
+                            sistemas de rastreamento de candidatos (ATS).
+                        </p>
+                        <p style="font-size: 16px;">
+                            Estruturo o documento com palavras-chave da sua área, foco em resultados, verbos de ação
+                            e
+                            clareza de leitura.
+                        </p>
+                        <p style="font-size: 16px;">
+                            O currículo final é direto, estratégico e pensado pra destacar o que realmente importa:
+                            seu
+                            valor profissional.
+                        </p>
+
                     </div>
                     <div class="servico animate__animated animate__fadeInUp delay-2s">
                         <h3><i class="fas fa-users"></i> Treinamento para Entrevistas</h3>
@@ -168,7 +168,8 @@
                     </div>
                     <div class="servico animate__animated animate__fadeInUp delay-3s">
                         <h3><i class="fas fa-search"></i> Serviço de Job Hunter (Busca Ativa de Vagas)</h3>
-                        <img src="/src/images/search-job-of-people-online-find-vacancy-employment-go-to-career-of-hire-people-seek-opportunity-for-vacancy-or-work-position-search-new-work-in-internet-illustration-vector.jpg" alt="">
+                        <img src="/src/images/search-job-of-people-online-find-vacancy-employment-go-to-career-of-hire-people-seek-opportunity-for-vacancy-or-work-position-search-new-work-in-internet-illustration-vector.jpg"
+                            alt="">
                         <p>
                             Enquanto você respira, eu pesco! Nesse serviço, assumo a linha de frente da sua recolocação:
                             monitoro plataformas de vagas,
@@ -211,7 +212,8 @@
 
                     <div class="servico animate__animated animate__fadeInUp delay-5s">
                         <h3><i class="fas fa-chart-bar"></i> Análise de Perfil Profissional</h3>
-                        <img src="/src/images/conceito-de-busca-de-pessoal-profissional-analise-de-curriculo-de-pessoal-recrutamento-gestao-de-recursos-humanos-trabalho-de-hr-design-plano_255881-213.avif" alt="">
+                        <img src="/src/images/conceito-de-busca-de-pessoal-profissional-analise-de-curriculo-de-pessoal-recrutamento-gestao-de-recursos-humanos-trabalho-de-hr-design-plano_255881-213.avif"
+                            alt="">
                         <p>
                             Antes de qualquer reformulação, é essencial entender quem é você no jogo do mercado. Minha
                             análise de perfil vai além do currículo: avalio seus pontos fortes, pontos de atenção e o
@@ -288,23 +290,35 @@
                     Empresas</a>
             </div>
         </section>
-
         <section id="candidatos" class="section bg-light animate__animated animate__fadeIn">
             <div class="container">
                 <h2 class="animate__animated animate__slideInLeft">Oportunidades para Candidatos</h2>
                 <p class="animate__animated animate__fadeInUp">Se você está em busca de novas oportunidades de carreira,
-                    explore nosso banco de talentos e confira
-                    as vagas em aberto. Queremos te ajudar a encontrar o seu próximo desafio profissional.</p>
-                <h3 class="animate__animated animate__slideInLeft">Envie seu Currículo</h3>
-                <form action="#" method="post" class="form-curriculo animate__animated animate__fadeInUp">
-                    <input type="text" placeholder="Seu Nome">
-                    <input type="email" placeholder="Seu E-mail">
-                    <input type="file">
-                    <textarea placeholder="Mensagem (opcional)"></textarea>
-                    <button type="submit" class="button primary animate__animated animate__pulse">Enviar
-                        Currículo</button>
-                </form>
-                <h3 class="animate__animated animate__slideInLeft">Dicas de Carreira</h3>
+                    explore nosso banco de talentos e confira as vagas em aberto. Queremos te ajudar a encontrar o seu
+                    próximo desafio profissional.</p>
+
+                <div class="mensagem-indicacao animate__animated animate__fadeInUp" style="margin-top: 30px;">
+                    <h3 class="animate__animated animate__slideInLeft">Quer receber indicações de profissionais para sua
+                        empresa?</h3>
+                    <p>Se a sua empresa está em busca de talentos prontos para contribuir com resultado, eu posso te
+                        ajudar!</p>
+                    <p>Compartilho currículos do meu banco de talentos, com profissionais que já passaram por um
+                        processo de preparação comigo — estão com o currículo estruturado, LinkedIn otimizado e prontos
+                        para entrevista.</p>
+                    <p>Você recebe um book com perfis alinhados à sua necessidade, facilitando o processo de análise e
+                        tomada de decisão.</p>
+                    <p><strong>Sem custo pela indicação. Sem dor de cabeça. Só gente boa, pronta pra conversar.</strong>
+                    </p>
+
+                    <a href="https://wa.me/7192882255" target="_blank"
+                        style="display: inline-flex; align-items: center; text-decoration: none; color: #009186; font-weight: bold; margin-top: 15px;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="32"
+                            height="32" style="margin-right: 8px;">
+                        Fale comigo pelo WhatsApp
+                    </a>
+                </div>
+
+                <h3 class="animate__animated animate__slideInLeft" style="margin-top: 40px;">Dicas de Carreira</h3>
                 <ul class="animate__animated animate__fadeInUp">
                     <li><a href="#"><i class="fas fa-arrow-right"></i> Como se preparar para uma entrevista de
                             emprego</a></li>
@@ -314,6 +328,8 @@
                 </ul>
             </div>
         </section>
+
+
 
         <section id="depoimentos" class="section animate__animated animate__fadeIn">
             <div class="container">
@@ -391,6 +407,21 @@
                     </div>
                 </div>
             </div>
+            <!-- Botão flutuante -->
+            <button class="open-chat" onclick="toggleChat()">💬</button>
+
+            <!-- Janela do chat -->
+            <div class="chat-container" id="chat">
+                <div class="chat-header">Patroa dos Empregos Virtual</div>
+                <div class="chat-body" id="chatBody"></div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Digite sua resposta..."
+                        onkeydown="if(event.key==='Enter') sendMessage()" />
+                    <button onclick="sendMessage()">➤</button>
+                </div>
+            </div>
+
+
         </section>
     </main>
 
@@ -401,6 +432,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="/src/js/script.js"></script>
+
 </body>
 
 </html>
