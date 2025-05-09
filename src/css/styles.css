@@ -437,6 +437,13 @@ h3 {
     color: var(--branco-total);
 }
 
+#blog{
+    background-color: #f4f8ff;
+}
+.btn-primary-link{
+    color: #00267b;
+    font-weight: bold;
+}
 .contato-details h3 {
     margin-top: 0;
     color: var(--branco-total);

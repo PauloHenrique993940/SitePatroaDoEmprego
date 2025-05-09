@@ -1,0 +1,110 @@
+.pacotes {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pacotes h2 {
+    color: #1F3B73;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pacotes p {
+    color: #1e1e1e;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.container-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: left;
+    width: 300px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transições suaves */
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.03); /* Levemente para cima e aumenta um pouco */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+}
+.card h3 {
+    color: #7d0a11;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #1e1e1e;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.card ul li:last-child {
+    border-bottom: none;
+}
+
+.card .botao {
+    display: inline-block;
+    background-color: #7d0a11;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.card .botao:hover {
+    background-color: #3d0b0e;
+}
+
+/* Estilos específicos para cada plano (opcional) */
+.card-pleno h3 {
+    color: #28a745;
+}
+
+.card-pleno .botao {
+    background-color: #28a745;
+}
+
+.card-pleno .botao:hover {
+    background-color: #1e7e34;
+}
+
+.card-senior h3 {
+    color: #481c57;
+}
+
+.card-senior .botao {
+    background-color: #481c57;
+    color: #ffffff;
+}
+
+.card-senior .botao:hover {
+    background-color: #2a1033;
+}
