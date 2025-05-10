@@ -1,0 +1,40 @@
+.btn-download {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-download:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo por modelo */
+.estudante {
+    background-color: #4a90e2;
+    /* Azul educativo */
+}
+
+.estagio {
+    background-color: #7ed6df;
+    /* Azul claro, jovem */
+}
+
+.trainee {
+    background-color: #f8c291;
+    /* Coral suave */
+}
+
+.recem-formado {
+    background-color: #6ab04c;
+    /* Verde esperança */
+}
+
+.dev {
+    background-color: #2d3436;
+    /* Cinza escuro tech */
+}

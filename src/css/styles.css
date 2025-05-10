@@ -149,7 +149,7 @@ main .section.bg-light {
 
 h2 {
     font-size: 2.2em;
-    color: var(--azul-destaque);
+    color: #041f3d;
     /* Título branco */
     margin-bottom: 25px;
     text-align: center;
@@ -158,7 +158,7 @@ h2 {
 
 h3 {
     font-size: 1.6em;
-    color: var(--azul-destaque);
+    color: #041f3d;
     /* Subtítulo branco */
     margin-bottom: 12px;
     font-weight: bold;
@@ -219,6 +219,10 @@ h3 {
 .hero-content {
     flex: 1;
     padding-right: 30px;
+}
+#tituloBlue{
+    color: #041f3d;
+
 }
 
 .hero-content h1 {
@@ -299,6 +303,8 @@ h3 {
 #describre {
     color: #ffffff;
     font-weight: lighter;
+    font-size: 16px;
+    text-align: center;
 }
 
 .servicos-lista {
@@ -318,6 +324,7 @@ h3 {
 }
 
 .whatsapp-button {
+    margin-top: 20px;
     display: inline-block;
     background-color: #263172;
     color: white;
@@ -351,9 +358,14 @@ h3 {
     margin-top: 20px;
     padding: 10px;
     background-color: var(--backgroundColorFedeback);
-
-    height: 100%;
+    display: block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#informacoes{
+    text-align: center;
+    width: 100%;
+
 }
 
 .servico p {
@@ -385,7 +397,7 @@ h3 {
 h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: #333;
+    color: #041f3d;
 }
 
 .depoimentos-grid {
@@ -503,7 +515,6 @@ h2 {
 
 .contato-details h3 {
     margin-top: 30;
-    color: var(--branco-total);
     font-weight: bold;
     color: var(--azul-destaque);
 }
