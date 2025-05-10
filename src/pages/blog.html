@@ -14,6 +14,55 @@
       color: #333;
     }
 
+    .pulsando {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #25D366;
+      /* Verde do WhatsApp */
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      animation: pulse 1.5s infinite;
+      box-shadow: 0 0 0 rgba(37, 211, 102, 0.7);
+      transition: transform 0.2s;
+    }
+
+    .pulsando:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    .container-flex {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    #imageAtracao {
+      width: 600px;
+      height: 300px;
+    }
+
+    * {
+      list-style-type: none;
+    }
+
     .voltar-btn {
       display: inline-block;
       margin: 20px;
@@ -116,6 +165,30 @@
       color: #fff;
       margin-top: 60px;
     }
+
+    .curtiu {
+      display: inline-block;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #00267b;
+      background-color: #dce7ff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 38, 123, 0.2);
+      animation: fadeInUp 1s ease both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -125,16 +198,30 @@
   <section id="blog" class="section bg-light animate__animated animate__fadeIn">
     <div class="container">
       <h2 class="animate__animated animate__slideInLeft">Nosso Blog</h2>
-      <p class="animate__animated animate__fadeInUp">Acompanhe nossos artigos e insights sobre o mundo do RH,
-        mercado de trabalho, liderança e muito mais. Mantenha-se atualizado com as últimas tendências e dicas
-        para o sucesso da sua empresa e carreira.</p>
+      <p class="animate__animated animate__fadeInUp">
+        Acompanhe nossos artigos e insights sobre o mundo do RH, mercado de trabalho, liderança e muito mais.
+        Mantenha-se atualizado com as últimas tendências e dicas para o sucesso da sua empresa e carreira.
+        Aqui você encontra conteúdos sobre entrevistas, currículos, produtividade, networking e desenvolvimento pessoal.
+      </p>
+      <div>
+        <h3>Temas que você vai encontrar por aqui:</h3>
+        <ul>
+          <li>✔️ Como contratar talentos de forma estratégica</li>
+          <li>✔️ Treinamento e desenvolvimento de equipes</li>
+          <li>✔️ Cultura organizacional e employer branding</li>
+          <li>✔️ Diversidade, equidade e inclusão no ambiente corporativo</li>
+          <li>✔️ Direitos e deveres do trabalhador</li>
+          <li>✔️ Tendências do RH para 2025 e além</li>
+        </ul>
+      </div>
 
       <div class="blog-grid">
         <div class="blog-card">
           <img src="/src/images/intrevista.jpeg" alt="Entrevistas de Emprego">
           <h3>Como se destacar em entrevistas de emprego</h3>
           <p>Dicas práticas de especialistas em RH para impressionar recrutadores e aumentar suas chances.</p>
-          <a href="https://www.linkedin.com/pulse/dicas-entrevista-de-emprego" target="_blank">Leia mais</a>
+          <a href="https://forbes.com.br/carreira/2024/07/quer-ir-bem-na-entrevista-de-emprego-confira-como-se-destacar/"
+            target="_blank">Leia mais</a>
         </div>
 
         <div class="blog-card">
@@ -146,31 +233,154 @@
         </div>
 
         <div class="blog-card">
-          <img src="https://via.placeholder.com/400x200?text=Liderança+Feminina" alt="Liderança Feminina">
+          <img src="/src/images/lideranca.jpg" alt="Liderança Feminina">
           <h3>Liderança feminina no mercado atual</h3>
           <p>Entenda os desafios e conquistas das mulheres em cargos de liderança nas empresas.</p>
           <a href="https://www.unwomen.org/pt/news" target="_blank">Leia mais</a>
         </div>
 
         <div class="blog-card">
-          <img src="https://via.placeholder.com/400x200?text=Produtividade+no+Trabalho" alt="Produtividade">
+          <img src="/src/images/homeOffice.jpg" alt="Produtividade">
           <h3>Como aumentar a produtividade no home office</h3>
           <p>Dicas práticas para manter o foco e a disciplina trabalhando de casa.</p>
-          <a href="https://www.todamateria.com.br/dicas-para-home-office/" target="_blank">Leia mais</a>
+          <a href="https://www.nomadglobal.com/conteudos/como-aumentar-a-produtividade" target="_blank">Leia mais</a>
         </div>
 
         <div class="blog-card">
-          <img src="https://via.placeholder.com/400x200?text=Currículo+Perfeito" alt="Currículo">
+          <img src="/src/images/modelo_atualizado_lc_br_8.jpg" alt="Currículo">
           <h3>Monte o currículo ideal para 2025</h3>
           <p>Veja o que incluir (e o que evitar) para ter um currículo moderno e eficaz.</p>
-          <a href="https://www.catho.com.br/carreira-sucesso/dicas-de-curriculo/" target="_blank">Leia mais</a>
+          <a href="https://www.extraconsult.com.br/como-atualizar-curriculo-2025/" target="_blank">Leia mais</a>
         </div>
 
         <div class="blog-card">
-          <img src="https://via.placeholder.com/400x200?text=Networking+Profissional" alt="Networking">
+          <img src="/src/images/network.jpg" alt="Networking">
           <h3>Networking que funciona: como criar conexões reais</h3>
           <p>O segredo está na qualidade das relações, e não na quantidade de contatos.</p>
-          <a href="https://endeavor.org.br/como-fazer-networking" target="_blank">Leia mais</a>
+          <a href="https://www.agendor.com.br/blog/como-fazer-networking/" target="_blank">Leia mais</a>
+        </div>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img src="/src/images/recrutamento.jpg" alt="Recrutamento Estratégico">
+          <h3>Recrutamento estratégico: contrate certo desde o início</h3>
+          <p>Veja como aplicar técnicas modernas de seleção para reduzir o turnover e fortalecer sua equipe.</p>
+          <a href="https://endeavor.org.br/gestao-pessoas/recrutamento-selecao/" target="_blank">Leia mais</a>
+        </div>
+
+        <div class="blog-card">
+          <img src="/src/images/softskills.jpg" alt="Soft Skills">
+          <h3>As soft skills mais valorizadas em 2025</h3>
+          <p>Comunicação, empatia e resolução de problemas são mais importantes do que nunca. Veja por quê.</p>
+          <a href="https://www.hsm.com.br/artigos/soft-skills-habilidades-do-futuro" target="_blank">Leia mais</a>
+        </div>
+
+        <div class="blog-card">
+          <img src="/src/images/treinamento.jpg" alt="Treinamento e Desenvolvimento">
+          <h3>Treinamento de equipe: como implementar com sucesso</h3>
+          <p>Descubra como criar programas de capacitação alinhados aos objetivos da empresa.</p>
+          <a href="https://blog.lahar.com.br/marketing/treinamento-e-desenvolvimento/" target="_blank">Leia mais</a>
+        </div>
+
+        <div class="blog-card">
+          <img src="/src/images/clima-organizacional.jpg" alt="Clima Organizacional">
+          <h3>Clima organizacional: como avaliar e melhorar</h3>
+          <p>Ambientes saudáveis aumentam o engajamento e a produtividade. Veja como medir e agir.</p>
+          <a href="https://www.rhportal.com.br/artigos-rh/clima-organizacional/" target="_blank">Leia mais</a>
+        </div>
+
+        <div class="blog-card">
+          <img src="/src/images/diversidade.jpg" alt="Diversidade no trabalho">
+          <h3>Diversidade e inclusão: um diferencial competitivo</h3>
+          <p>Empresas diversas são mais inovadoras e produtivas. Saiba como aplicar boas práticas.</p>
+          <a href="https://www.abdiversidade.org.br/" target="_blank">Leia mais</a>
+        </div>
+
+        <div class="blog-card">
+          <img src="/src/images/empreendedorismo.jpg" alt="Empreendedorismo Feminino">
+          <h3>Empreendedorismo feminino: desafios e conquistas</h3>
+          <p>Mulheres à frente de negócios de impacto. Inspire-se com histórias reais e dicas práticas.</p>
+          <a href="https://www.sebrae.com.br/sites/PortalSebrae/empreendedorismo-feminino" target="_blank">Leia mais</a>
+        </div>
+
+      </div>
+      <div class="container-flex">
+        <div>
+          <h2>Como contratar talentos de formas estratégica. </h2>
+          <img src="/src/images/atracao-de-talentos.jpg" alt="atracao-de-talentos" id="imageAtracao">
+          <p>
+            Para chegar ao profissional ideal considerando as características da vaga e os valores relacionados à
+            empresa, é necessário investir em uma boa estratégia de atração de talentos.
+          </p>
+          <p>
+            Realizar uma contratação assertiva é importante para evitar diversos problemas para o seu negócio, como alta
+            rotatividade, prejuízos financeiros e falta de sintonia entre os funcionários.
+          </p>
+          <p>
+            Se você deseja saber como contratar pessoas de uma forma eficiente, atraindo os melhores candidatos para as
+            posições disponíveis na sua empresa, confira as informações abaixo.
+          </p>
+          <h2>O que é atração de talentos? </h2>
+          <p>
+            Assim como as empresas estabelecem critérios para contratar novos funcionários, bons profissionais também
+            são seletivos no momento de avaliar uma oportunidade. Nesse sentido, o conceito de atração de talentos tem o
+            objetivo de despertar o interesse dos candidatos em fazerem parte do seu quadro de colaboradores, indo de
+            encontro às estratégias de employer branding.
+          </p>
+          <p>
+            Além de divulgar requisitos coerentes e benefícios atrativos para cada vaga, é importante saber como chegar
+            até os melhores candidatos. Sendo assim, para atrair os profissionais mais qualificados do mercado, é
+            fundamental que os processos de recrutamento e seleção sejam bem-estruturados.
+          </p>
+
+        </div>
+        <div>
+          <h2>Como contratar pessoas de forma eficiente? </h2>
+          <p>
+            Para atrair talentos, não basta formular e divulgar uma vaga. O mais importante é reunir fatores que tornam
+            a oportunidade interessante, além de utilizar os melhores canais para chegar aos candidatos certos. Veja a
+            seguir o passo a passo de como fazer uma boa contratação.
+          </p>
+          <p>
+            Oferecer salários coerentes de acordo com o mercado e a senioridade exigida é fundamental para todas as
+            empresas que priorizam a atração de talentos. Se você não sabe ao certo como fazer essa definição, comece
+            avaliando a concorrência e utilizando sites como o Glassdor, que reúne opiniões de funcionários e
+            informações salariais.
+          </p>
+          <p>
+            Quando o objetivo é atrair talentos, os benefícios também devem ser interessantes. Flexibilidade de
+            horários, assistêntica médica, home office, vale-refeição e plano de carreira estão entre os mais
+            valorizados pelos candidatos.
+          </p>
+          <p>
+            Com o objetivo de atrair candidatos compatíveis levando em consideração as necessidades da sua empresa, a
+            descrição da vaga deve ser elaborada de forma estratégica e assertiva. Vale ressaltar que um bom anúncio
+            evita que o RH perca tempo com pessoas que não estão alinhadas à cultura organizacional da empresa.
+          </p>
+          <ul>
+            <li>
+              ✔️
+              O título da vaga deve informar o cargo de forma direta e breve, sem termos desnecessários;
+            </li>
+            <li>
+              ✔️ Não se esqueça de informar o local de trabalho, além de especificar se a vaga é presencial, híbrida ou
+              home-office;
+            </li>
+            <li>
+              ✔️ Para uma descrição atrativa, utilize a criatividade e exalte os valores da empresa, cultura, benefícios
+              e
+              diferenciais;
+            </li>
+            <li>
+              ✔️ Inclua as funções, requisitos indispensáveis, habilidades desejáveis e benefícios da vaga;
+            </li>
+            <li>
+              ✔️ Divulgar o salário pode ser um diferencial.
+            </li>
+          </ul>
+          <span class="curtiu">Curtiu meu conteúdo</span>
+          <a href="" class="pulsando">Clique aqui para seguir a comunidade da Patroa do emprego no WhatsApp</a>
+
         </div>
       </div>
 
@@ -191,6 +401,7 @@
         <iframe src="https://www.youtube.com/embed/lAfLwzUjQF8" title="Liderança Feminina"></iframe>
       </div>
     </div>
+
   </section>
 
   <footer>
