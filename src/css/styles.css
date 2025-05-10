@@ -383,17 +383,16 @@ h2 {
 }
 
 .depoimento-card {
-    background-color: var(--branco-total);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    height: 300px;
-    border: 2px solid var(--azul-acinzentado);
+    height: 100%;
 }
 
 .depoimento-imagem {
+    padding: 10px;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -405,6 +404,7 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     /* Transições suaves para os efeitos de hover */
 }
