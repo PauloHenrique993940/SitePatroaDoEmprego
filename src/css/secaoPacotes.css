@@ -43,7 +43,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
 }
 .card h3 {
-    color: #7d0a11;
+    color: #1F3B73;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -70,7 +70,7 @@
 
 .card .botao {
     display: inline-block;
-    background-color: #7d0a11;
+    background-color: #1F3B73;
     color: #ffffff;
     padding: 10px 15px;
     text-decoration: none;
@@ -80,7 +80,7 @@
 }
 
 .card .botao:hover {
-    background-color: #3d0b0e;
+    background-color: #102041;
 }
 
 /* Estilos específicos para cada plano (opcional) */
@@ -97,14 +97,14 @@
 }
 
 .card-senior h3 {
-    color: #481c57;
+    color: #1F3B73;
 }
 
 .card-senior .botao {
-    background-color: #481c57;
+    background-color: #1F3B73;
     color: #ffffff;
 }
 
 .card-senior .botao:hover {
-    background-color: #2a1033;
+    background-color: #102041;
 }

@@ -89,7 +89,7 @@ body {
 }
 
 header {
-    background-color: #041f3d;
+    background-color: var(--backgroudFundAzul);
     /* Header com fundo preto suave */
     color: var(--preto-suave);
     padding: 15px 0;
@@ -292,10 +292,13 @@ h3 {
     /* Borda clara para destacar */
 }
 
-#title,
+#title{
+    color: #ffffff;
+    text-align: center;
+}
 #describre {
-    color: var(--preto-suave);
-    font-weight: bold;
+    color: #ffffff;
+    font-weight: lighter;
 }
 
 .servicos-lista {
@@ -342,6 +345,15 @@ h3 {
     color: var(--preto-suave);
     font-weight: bold;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#Importante{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--azul-acinzentado);
+
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .servico p {
