@@ -47,7 +47,8 @@
 
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
     background-color: var(--branco-total);
@@ -228,8 +229,11 @@ h3 {
 .hero-content h1 {
     font-size: 2.6em;
     margin-bottom: 15px;
-    color: var(--azul-destaque);
     font-weight: bold;
+    background: linear-gradient(to right, #ADD8E6, #87CEEB, #6495ED,   #D2B48C, #BC8F8F, #CD853F, #F4A460, #FFDEAD, #FFE4B5, #FFDAB9, #CD853F,  #E9967A, #FA8072, #FFC0CB, #FFB6C1,  #6A5ACD, #483D8B, #7B68EE, #6495ED, #4682B4, #4169E1, #1E90FF, #00BFFF, #87CEFA, #ADD8E6); /* Gradiente com várias cores */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .hero-content p {

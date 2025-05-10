@@ -1,0 +1,27 @@
+#Garantia {
+    background-color: #000000;
+}
+
+#satisfação {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#title-garantia {
+    color: #b49823;
+}
+
+#text-describ {
+    color: #b49823;
+    font-style: italic;
+}
+
+@media (max-width: 425px) {
+    #satisfação {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
