@@ -1,0 +1,47 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 15s linear infinite; /* Ajuste a velocidade aqui */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 200px; /* Ajuste o tamanho dos itens conforme necessário */
+    margin: 0 10px;
+    box-sizing: border-box;
+    /* Adicione estilos para as imagens, como bordas ou sombras, se desejar */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 8px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Move para a esquerda */
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.vagas-section {
+    background-color: #ffffff;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.vagas-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1F3B73;
+}

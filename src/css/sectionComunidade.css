@@ -1,0 +1,71 @@
+.community-section {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.community-description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.community-card {
+    border: 1px solid #7d0a11;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar a imagem e o título */
+}
+
+.community-card img {
+    max-width: 100%; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.community-card h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center; /* Centralizar o título */
+}
+
+.community-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ocupar a largura do card */
+}
+
+.community-links li {
+    margin-bottom: 8px;
+}
+
+.community-links li a {
+    display: block;
+    padding: 10px;
+    background-color: #f8f9fa;
+    color: #1F3B73;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centralizar o texto dos links */
+}
+
+.community-links li a:hover {
+    background-color: #e9ecef;
+}
+
+.important-note {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #dc3545; /* Vermelho */
+    font-weight: bold;
+    text-align: center;
+}

@@ -85,15 +85,15 @@
 
 /* Estilos específicos para cada plano (opcional) */
 .card-pleno h3 {
-    color: #28a745;
+    color: #1F3B73;
 }
 
 .card-pleno .botao {
-    background-color: #28a745;
+    background-color: #1F3B73;
 }
 
 .card-pleno .botao:hover {
-    background-color: #1e7e34;
+    background-color: #142547;
 }
 
 .card-senior h3 {

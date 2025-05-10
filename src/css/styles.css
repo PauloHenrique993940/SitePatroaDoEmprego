@@ -1,15 +1,12 @@
 :root {
-    --preto-suave: #1E1E1E;
-    /* Preto não tão escuro */
-    --azul-acinzentado: #778899;
-    /* Cor da roupa na foto (aproximada) */
-    --branco-marfim: #F8F8DC;
-    --cinza-claro: #D3D3D3;
-    /* Um cinza mais claro para texto principal */
-    --branco-total: #F4f8ff;
-    --azul-destaque: #1F3B73;
-    /* Um azul para destaque */
+    --preto-suave: #1E1E1E;             /* Fundo escuro elegante */
+    --azul-acinzentado: #5A6E87;        /* Azul acinzentado mais sóbrio */
+    --branco-marfim: #F8F8DC;           /* Toque elegante e limpo */
+    --cinza-claro: #D3D3D3;             /* Texto neutro claro */
+    --branco-total: #F4F8FF;            /* Fundo claro profissional */
+    --azul-destaque: #1F3B73;           /* Azul forte e profissional */
 
+    /* Hierarquia visual */
     --corPrincipal: var(--azul-acinzentado);
     --corSecundaria: var(--azul-destaque);
     --corTerciaria: var(--branco-marfim);
@@ -18,14 +15,33 @@
     --corFundo: var(--preto-suave);
     --corBotaoDestaque: var(--azul-destaque);
     --corFundoSecoes: var(--preto-suave);
-    /* Seções também com fundo preto suave */
-    --backgroundColorFedeback: #7d0a11;
-    --backgroudFundAzul: #00267b;
+
+    /* Adicionais */
+    --backgroundColorFedeback: #7d0a11;   /* Vermelho feedback */
+    --backgroudFundAzul: #00267b;         /* Azul fundo intenso */
+    --verde-sucesso: #1ebe5b;             /* Verde WhatsApp / sucesso */
 }
+
 
 * {
     list-style-type: none;
 
+}
+
+.social-links a {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #333;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+.social-links a img {
+    width: 40px;
 }
 
 
@@ -344,90 +360,117 @@ h3 {
 }
 
 /*Depoimentos seção */
+#depoimentos {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
 .depoimentos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-    margin-top: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .depoimento-card {
-    background-size: cover;
-    background-position: center;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    color: var(--branco-total);
-    padding: 15px;
+    background-color: var(--branco-total);
+    border-radius: 8px;
     display: flex;
-    align-items: flex-end;
-    min-height: 180px;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* Overlay escura para melhor contraste do texto */
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--azul-acinzentado);
+}
+
+.depoimento-imagem {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* Garante que os efeitos de borda-radius na imagem funcionem */
+}
+
+.depoimento-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    /* Transições suaves para os efeitos de hover */
 }
 
 .depoimento-content {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 12px;
-    border-radius: 4px;
-    width: 100%;
-    color: var(--branco-total);
+    padding: 20px;
 }
 
-.depoimento-content .citacao {
-    font-style: italic;
-    font-size: 1.05em;
-    margin-bottom: 8px;
-    font-weight: normal;
-    color: var(--cinza-claro);
+
+/* Exemplo 3: Efeito de zoom no hover */
+.depoimento-card:hover .depoimento-imagem img {
+    transform: scale(1.05);
 }
 
-.depoimento-content .autor {
-    font-weight: bold;
-    text-align: right;
-    font-size: 0.9em;
-    color: var(--branco-total);
+
+.depoimento-card:hover .depoimento-imagem img {
+    filter: grayscale(0%);
 }
+
+*/ .depoimento-card .depoimento-imagem {
+    position: relative;/ Necessário para posicionar a borda */
+}
+
+.depoimento-card .depoimento-imagem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    border-radius: 8px 8px 0 0;
+    transition: border-color 0.3s ease-in-out;
+}
+
+
 
 #sub-title {
     color: var(--azul-destaque);
     font-weight: bold;
 }
 
-.servico img {
-    width: 180px;
-    height: 180px;
-    filter: brightness(1.1);
-    /* Clarear um pouco as imagens em fundo escuro */
+.Post-Image {
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    display: inline-block; /* Ou block, dependendo do layout */
+    width: 100%;
 }
 
-.form-curriculo,
-.contato-form form {
-    display: grid;
-    gap: 12px;
-    margin-top: 20px;
+.Post-Image img {
+    display: block; /* Para que a imagem preencha o container */
+    width: 100%;
+    object-fit: contain;
+    height: 90vh;
 }
 
-.form-curriculo input[type="text"],
-.form-curriculo input[type="email"],
-.form-curriculo input[type="file"],
-.form-curriculo textarea,
-.contato-form form input[type="text"],
-.contato-form form input[type="email"],
-.contato-form form textarea {
-    padding: 10px;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 4px;
-    font-size: 1em;
-    background-color: #333;
-    /* Fundo dos inputs um pouco mais claro que o body */
-    color: var(--branco-total);
-    font-weight: normal;
+.Post-Image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    pointer-events: none; /* Permite que interações (cliques, hovers) passem pelo overlay */
 }
 
-.form-curriculo textarea,
-.contato-form form textarea {
-    min-height: 90px;
-}
 
 .contato-info {
     display: grid;
@@ -437,23 +480,26 @@ h3 {
     color: var(--branco-total);
 }
 
-#blog{
+#blog {
     background-color: #f4f8ff;
 }
-.btn-primary-link{
+
+.btn-primary-link {
     color: #00267b;
     font-weight: bold;
 }
+
 .contato-details h3 {
-    margin-top: 0;
+    margin-top: 30;
     color: var(--branco-total);
     font-weight: bold;
+    color: var(--azul-destaque);
 }
 
 .contato-details p {
     margin-bottom: 8px;
-    color: var(--cinza-claro);
-    font-weight: normal;
+    color: var(--azul-destaque);
+    font-weight: bold;
 }
 
 .contato-details i {

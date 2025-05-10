@@ -1,0 +1,36 @@
+#perfil{
+    background-color: #465c5a;
+}
+
+#perfil h2{
+    color: #8e6664;
+}
+
+#perfil p {
+    color:#ffffff;
+    font-size: 16px;
+}
+#perfilContainer{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    padding: 30px;
+
+}
+
+@media (max-width: 425px){
+    #perfilContainer{
+        display: block;
+        padding: 0px;
+
+    }
+
+    #perfilContainert img{
+        max-width: 100%;
+    }
+}
+
+
+#perfilContainer img{
+    width: 100%;
+}
