@@ -4,7 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Patroa dos Empregos</title>
+    <meta name="description"
+        content="Conectamos empregadores e profissionais com confiança. Encontre ou ofereça oportunidades com a Patroa dos Empregos.">
+    <meta name="keywords" content="empregos, trabalho, contratação, currículo, oportunidades, vagas">
+    <meta name="author" content="Patroa dos Empregos">
+
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Patroa dos Empregos">
+    <meta property="og:description" content="Conectamos empregadores e profissionais com confiança.">
+    <meta property="og:image" content="https://www.seusite.com/imagens/og-image.jpg">
+    <!-- substitua pela URL da imagem -->
+    <meta property="og:url" content="https://www.seusite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Patroa dos Empregos">
+    <meta name="twitter:description" content="Conectamos empregadores e profissionais com confiança.">
+    <meta name="twitter:image" content="https://www.seusite.com/imagens/twitter-card.jpg">
+    <!-- substitua pela URL da imagem -->
+
+    <!-- Idioma -->
+    <meta http-equiv="Content-Language" content="pt-BR">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.seusite.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/src/imagens/favicon.ico" type="image/x-icon">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato&display=swap" rel="stylesheet"> -->
@@ -19,6 +50,7 @@
     <link rel="stylesheet" href="/src/css/perfil.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 
 <body>
     <header>
@@ -39,8 +71,7 @@
                             data-aos-once="true">Candidatos</a></li>
                     <li><a href="#depoimentos" data-aos="fade-left" data-aos-delay="600"
                             data-aos-once="true">Depoimentos</a></li>
-                    <li><a href="/src/pages/blog.html" data-aos="fade-left" data-aos-delay="700"
-                            data-aos-once="true">Blog</a></li>
+                    <li><a href="#" data-aos="fade-left" data-aos-delay="700" data-aos-once="true">Blog</a></li>
                     <li><a href="#contato" data-aos="fade-left" data-aos-delay="800" data-aos-once="true">Contato</a>
                     </li>
                 </ul>
@@ -75,8 +106,8 @@
         </section>
         <section id="perfil">
             <div class="container">
-                <h2>Quem é Jamile Abreu?</h2>
                 <div id="perfilContainer">
+                    <h2>Quem é Jamile Abreu?</h2>
 
                     <div>
                         <p>
@@ -206,32 +237,7 @@
                     </div>
 
                 </div>
-                <div>
-                    <h2 id="tituloBlue">Ainda não tem um Currículo?</h2>
-                    <p>
-                        Ter um currículo bem feito é o primeiro passo para conquistar uma oportunidade no mercado de
-                        trabalho.
-                        Se você ainda não tem o seu, nós podemos ajudar
-                    </p>
-                    <p>
-                        Baixe agora gratuitamente um modelo de currículo profissional, pronto para ser preenchido com
-                        seus dados.
-                        É rápido, fácil e aumenta suas chances de ser contratado!
-                    </p>
-                    <p>
-                        O arquivo está em formato Word editável. Você pode abrir e preencher no computador ou celular.
-                    </p>
-                </div>
-                <a href="/src/curriculo/modelo-de-curriculo-estudante.docx" download class="btn-download estudante">📄
-                    Modelo Estudante</a>
-                <a href="/src/curriculo/modelo-de-curriculo-estagio1.docx" download class="btn-download estagio">📄
-                    Modelo Estágio</a>
-                <a href="/src/curriculo/modelo-de-curriculo-trainee2.docx" download class="btn-download trainee">📄
-                    Modelo para Trainee</a>
-                <a href="/src/curriculo/modelo-de-curriculo-recem-formado2.docx" download
-                    class="btn-download recem-formado">📄 Recém Formado</a>
-                <a href="/src/curriculo/modelo-de-Curriculo-desenvolvedor-front-end-catho-atualizado.docx" download
-                    class="btn-download dev">📄 Currículo para Dev</a>
+
 
             </div>
             <div id="Importante">
@@ -260,11 +266,13 @@
                     </p>
                 </div>
             </div>
-            <a class="whatsapp-button"
-                href="https://wa.me/557192882255?text=Olá,Gostaria de Obter mais informações sobre seus serviço!"
-                target="_blank">
-                Obter mais informaçoes
-            </a>
+            <div class="container">
+                <a class="whatsapp-button"
+                    href="https://wa.me/557192882255?text=Olá,Gostaria de Obter mais informações sobre seus serviço!"
+                    target="_blank">
+                    Obter mais informaçoes
+                </a>
+            </div>
         </section>
         <section class="pacotes">
             <h2>Nossos Pacotes de Recolocação Profissional</h2>
@@ -443,13 +451,9 @@
         <section id="Garantia">
             <div class="container">
                 <div id="satisfação">
-                    <img 
-                        src="/src/images/pngtree-3-month-warranty-logo-with-golden-shield-and-golden-ribbon-png-image_4693890.png" 
-                        alt="Ícone de Garantia"
-                        data-aos="zoom-in"
-                        data-aos-duration="1000"
-                    >
-        
+                    <img src="/src/images/pngtree-3-month-warranty-logo-with-golden-shield-and-golden-ribbon-png-image_4693890.png"
+                        alt="Ícone de Garantia" data-aos="zoom-in" data-aos-duration="1000">
+
                     <div data-aos="fade-left" data-aos-duration="1000">
                         <h2 id="title-garantia">Garantia de Satisfação</h2>
                         <p id="text-describ">
@@ -461,7 +465,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="blog" class="section bg-light animate__animated animate__fadeIn">
             <div class="container">
                 <h2 class="animate__animated animate__slideInLeft" data-aos="slide-right">Nosso Blog</h2>
