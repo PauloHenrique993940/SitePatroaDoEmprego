@@ -506,8 +506,8 @@ h2 {
 .contato-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
     margin-top: 20px;
     color: var(--branco-total);
     width: 100%;
@@ -611,7 +611,7 @@ footer {
     }
 
     .contato-info {
-        grid-template-columns: 1fr;
+        display: flex;
     }
 }
 
@@ -639,6 +639,18 @@ footer {
         text-align: center;
     }
 
+    .contato-info {
+        display: flex;
+        text-align: center;
+    }
+
+
     
 }
 
+
+@media(max-width: 425px){
+    .contato-info{
+        display: grid;
+    }
+}
