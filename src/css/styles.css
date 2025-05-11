@@ -1,10 +1,16 @@
 :root {
-    --preto-suave: #1E1E1E;             /* Fundo escuro elegante */
-    --azul-acinzentado: #5A6E87;        /* Azul acinzentado mais sóbrio */
-    --branco-marfim: #F8F8DC;           /* Toque elegante e limpo */
-    --cinza-claro: #D3D3D3;             /* Texto neutro claro */
-    --branco-total: #F4F8FF;            /* Fundo claro profissional */
-    --azul-destaque: #1F3B73;           /* Azul forte e profissional */
+    --preto-suave: #1E1E1E;
+    /* Fundo escuro elegante */
+    --azul-acinzentado: #5A6E87;
+    /* Azul acinzentado mais sóbrio */
+    --branco-marfim: #F8F8DC;
+    /* Toque elegante e limpo */
+    --cinza-claro: #D3D3D3;
+    /* Texto neutro claro */
+    --branco-total: #F4F8FF;
+    /* Fundo claro profissional */
+    --azul-destaque: #1F3B73;
+    /* Azul forte e profissional */
 
     /* Hierarquia visual */
     --corPrincipal: var(--azul-acinzentado);
@@ -17,9 +23,12 @@
     --corFundoSecoes: var(--preto-suave);
 
     /* Adicionais */
-    --backgroundColorFedeback: #7d0a11;   /* Vermelho feedback */
-    --backgroudFundAzul: #00267b;         /* Azul fundo intenso */
-    --verde-sucesso: #1ebe5b;             /* Verde WhatsApp / sucesso */
+    --backgroundColorFedeback: #7d0a11;
+    /* Vermelho feedback */
+    --backgroudFundAzul: #00267b;
+    /* Azul fundo intenso */
+    --verde-sucesso: #1ebe5b;
+    /* Verde WhatsApp / sucesso */
 }
 
 
@@ -28,10 +37,12 @@
     box-sizing: border-box;
 
 }
-p{
+
+p {
     text-align: justify;
     font-weight: bold;
 }
+
 .social-links a {
     font-size: 30px;
     margin: 0 10px;
@@ -94,8 +105,8 @@ body {
 }
 
 header {
-    background-color: #041f3d; 
-   
+    background-color: #041f3d;
+
     /* Header com fundo preto suave */
     color: var(--preto-suave);
     padding: 15px 0;
@@ -184,7 +195,7 @@ h3 {
     /* Botão de destaque azul */
     color: var(--branco-total);
     animation: none;
-    border: 1px solid ;
+    border: 1px solid;
 }
 
 .button.primary:hover {
@@ -227,7 +238,8 @@ h3 {
     flex: 1;
     padding-right: 30px;
 }
-#tituloBlue{
+
+#tituloBlue {
     color: #041f3d;
 
 }
@@ -236,7 +248,8 @@ h3 {
     font-size: 2.6em;
     margin-bottom: 15px;
     font-weight: bold;
-    background: linear-gradient(to right, #ADD8E6, #87CEEB, #6495ED,   #D2B48C, #BC8F8F, #CD853F, #F4A460, #FFDEAD, #FFE4B5, #FFDAB9, #CD853F,  #E9967A, #FA8072, #FFC0CB, #FFB6C1,  #6A5ACD, #483D8B, #7B68EE, #6495ED, #4682B4, #4169E1, #1E90FF, #00BFFF, #87CEFA, #ADD8E6); /* Gradiente com várias cores */
+    background: linear-gradient(to right, #ADD8E6, #87CEEB, #6495ED, #D2B48C, #BC8F8F, #CD853F, #F4A460, #FFDEAD, #FFE4B5, #FFDAB9, #CD853F, #E9967A, #FA8072, #FFC0CB, #FFB6C1, #6A5ACD, #483D8B, #7B68EE, #6495ED, #4682B4, #4169E1, #1E90FF, #00BFFF, #87CEFA, #ADD8E6);
+    /* Gradiente com várias cores */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -267,7 +280,7 @@ h3 {
 }
 
 .hero-image img {
-     box-shadow:
+    box-shadow:
         0 0 20px rgba(14, 30, 48, 0.5),
         0 0 40px rgba(14, 30, 48, 0.3),
         0 0 60px rgba(14, 30, 48, 0.2);
@@ -313,10 +326,11 @@ h3 {
     /* Borda clara para destacar */
 }
 
-#title{
+#title {
     color: #ffffff;
     text-align: center;
 }
+
 #describre {
     color: #ffffff;
     font-weight: lighter;
@@ -340,9 +354,7 @@ h3 {
     background-color: var(--branco-total);
 }
 
-#servicos-lista h3{
-
-}
+#servicos-lista h3 {}
 
 .whatsapp-button {
     margin-top: 20px;
@@ -376,15 +388,16 @@ h3 {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-#Importante{
+#Importante {
     margin-top: 20px;
     padding: 10px;
     background-color: var(--backgroundColorFedeback);
     display: block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
 }
 
-#informacoes{
+#informacoes {
     text-align: center;
     width: 100%;
 
@@ -495,13 +508,16 @@ h2 {
 }
 
 .Post-Image {
-    position: relative; /* Necessário para posicionar o pseudo-elemento */
-    display: inline-block; /* Ou block, dependendo do layout */
+    position: relative;
+    /* Necessário para posicionar o pseudo-elemento */
+    display: inline-block;
+    /* Ou block, dependendo do layout */
     width: 100%;
 }
 
 .Post-Image img {
-    display: block; /* Para que a imagem preencha o container */
+    display: block;
+    /* Para que a imagem preencha o container */
     width: 100%;
     object-fit: contain;
     height: 100%;
@@ -514,16 +530,17 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
-    pointer-events: none; /* Permite que interações (cliques, hovers) passem pelo overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Preto com 50% de opacidade */
+    pointer-events: none;
+    /* Permite que interações (cliques, hovers) passem pelo overlay */
 }
 
 
 .contato-info {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
     margin-top: 20px;
     color: var(--branco-total);
     width: 100%;
@@ -539,9 +556,10 @@ h2 {
 }
 
 .contato-details h3 {
-    margin-top: 30;
+    margin-top: 30px;
     font-weight: bold;
     color: var(--azul-destaque);
+    text-align: justify;
 }
 
 .contato-details p {
@@ -564,6 +582,8 @@ h2 {
     transition: color 0.3s ease;
 }
 
+
+
 .social-links a:hover {
     color: var(--azul-destaque);
 }
@@ -577,9 +597,11 @@ footer {
     border-top: 1px solid var(--cinza-claro);
     font-weight: normal;
 }
-#copy{
+
+#copy {
     text-align: center;
 }
+
 /* Responsivo (sem alterações) */
 @media (max-width: 992px) {
     .container {
@@ -661,15 +683,28 @@ footer {
     .contato-info {
         display: flex;
         text-align: center;
+        padding: 0px;
+    }
+
+    .social-links{
+        margin-top: 20px;
     }
 
 
-    
+
 }
 
 
-@media(max-width: 425px){
-    .contato-info{
-        display: grid;
+@media(max-width: 425px) {
+    .contato-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    
+
+}
+
+
 }
