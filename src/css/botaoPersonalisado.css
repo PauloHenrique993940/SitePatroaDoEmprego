@@ -1,0 +1,35 @@
+#Preco{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.preco-personalizado-container {
+    display: block;
+    /* Mudamos para block para que ocupe a largura total */
+    border: 2px dashed #0c3cda;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f0fff0;
+}
+
+.preco-personalizado-botao {
+    width: 100%;
+    /* Faz o botão ocupar 100% da largura do container */
+    background-color: #d9edf7;
+    color: #31708f;
+    border: 1px solid #bce8f1;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: block;
+    /* Opcional, mas útil para garantir que o width funcione como esperado */
+}
+
+.preco-personalizado-botao:hover {
+    background-color: #c4e3f3;
+}
