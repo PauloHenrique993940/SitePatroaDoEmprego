@@ -28,7 +28,10 @@
     box-sizing: border-box;
 
 }
-
+p{
+    text-align: justify;
+    font-weight: bold;
+}
 .social-links a {
     font-size: 30px;
     margin: 0 10px;
@@ -181,10 +184,11 @@ h3 {
     /* Botão de destaque azul */
     color: var(--branco-total);
     animation: none;
+    border: 1px solid ;
 }
 
 .button.primary:hover {
-    background-color: #427cbd;
+    background-color: #0e1e30;
     /* Tom mais escuro do azul */
     transform: scale(1.02);
 }
@@ -239,15 +243,19 @@ h3 {
 }
 
 .hero-content p {
-    font-size: 1.15em;
+    font-size: 16px;
     color: var(--preto-suave);
     /* Texto principal mais claro */
     margin-bottom: 25px;
     font-weight: normal;
+    text-align: justify;
+    font-weight: bold;
 }
 
 .hero-content span {
-    color: var(--pr);
+    color: #7d0a11;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .hero-buttons a {
@@ -259,8 +267,11 @@ h3 {
 }
 
 .hero-image img {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    /* Sombra mais forte */
+     box-shadow:
+        0 0 20px rgba(14, 30, 48, 0.5),
+        0 0 40px rgba(14, 30, 48, 0.3),
+        0 0 60px rgba(14, 30, 48, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .hero-image img,
@@ -381,6 +392,7 @@ h3 {
 
 .servico p {
     color: var(--preto-suave);
+    text-align: justify;
 }
 
 .servico:hover {
@@ -536,6 +548,7 @@ h2 {
     margin-bottom: 8px;
     color: var(--azul-destaque);
     font-weight: bold;
+    text-align: justify;
 }
 
 .contato-details i {
@@ -564,7 +577,9 @@ footer {
     border-top: 1px solid var(--cinza-claro);
     font-weight: normal;
 }
-
+#copy{
+    text-align: center;
+}
 /* Responsivo (sem alterações) */
 @media (max-width: 992px) {
     .container {

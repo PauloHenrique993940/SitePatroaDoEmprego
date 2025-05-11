@@ -9,6 +9,7 @@
 #perfil p {
     color:#ffffff;
     font-size: 16px;
+    text-align: justify;
 }
 #perfilContainer{
     display: flex;
