@@ -73,30 +73,12 @@ body {
     font-weight: normal;
 }
 
-.logo {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 56px;
-    font-weight: bold;
-    color: var(--branco-total);
-    /* Logo em branco para contraste */
-    /* Gradient sutil com tons da paleta */
-    background: linear-gradient(135deg, var(--azul-acinzentado), var(--azul-destaque));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 8px;
-    border: 1px solid var(--azul-destaque);
-    /* Borda com a cor de destaque */
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    /* Sombra mais visível em fundo escuro */
-    text-align: center;
-    transition: transform 0.3s ease;
+.logo img{
+    width: 60px;
+    height: 60px;
+
 }
 
-.logo:hover {
-    transform: scale(1.02);
-}
 
 .container {
     max-width: 1100px;
